@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Main Colors */
+:root {
+    --primary-color: #7B5713;
+    --secondary-color: #4e370c;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 32px 16px;
+    margin: auto;
+}
+
+/* Card Styling */
+.card {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih besar */
+    border-radius: 20px; /* Sudut yang lebih lembut */
+    padding: 40px; /* Padding yang lebih besar untuk ruang bernafas */
+    background-color: #fff; /* Warna latar belakang kembali ke putih */
+    border: 2px solid var(--primary-color); /* Border yang lebih tebal */
+    transition: transform 0.3s ease; /* Transisi yang halus saat hover */
+    max-width: 100%; /* Mengisi lebar maksimum yang tersedia */
+    width: 100%; /* Mengisi lebar maksimum yang tersedia */
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.05); /* Sedikit dinaikkan dan diperbesar saat hover */
+}
+
+/* Form Styling */
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* Lebar maksimum formulir */
+}
+
+.form-group {
+    margin: 20px 0; /* Ruang antar grup input */
+}
+
+form input[type="text"],
+form textarea {
+    border: 2px solid var(--primary-color);
+    padding: 12px; /* Padding yang lebih besar */
+    font-size: 1rem;
+    border-radius: 20px; /* Sudut yang lebih lembut */
+    transition: border-color 0.3s ease;
+    width: 100%;
+    max-width: 100%;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+    border-color: var(--primary-color);
+}
+
+form button {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 20px; /* Sudut yang lebih lembut */
+    color: white;
+    cursor: pointer;
+    padding: 14px 30px; /* Padding yang lebih besar */
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100%; /* Tombol mengisi lebar formulir */
+    max-width: 300px; /* Lebar maksimum tombol */
+    margin-top: 20px; /* Ruang antara tombol dan input */
+}
+
+form button:hover {
+    background-color: var(--secondary-color);
+}
+form label {
+    font-size: 1.2rem; /* Menambahkan ukuran teks yang lebih besar */
+    color: var(--primary-color); /* Warna teks yang sesuai */
+    font-weight: bold; /* Menambahkan ketebalan pada teks */
+    margin-bottom: 8px; /* Ruang bawah antara label dan input */
+}
+
+form textarea::placeholder,
+form input[type="text"]::placeholder {
+    color: #888; /* Warna placeholder yang lebih lembut */
+    font-style: italic; /* Gaya huruf italic pada placeholder */
+}
+
+/* Footer Styling */
+footer {
+    background-color:  #7B5713;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+/* AppBar Styling */
+.app-bar {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+/* Card Styling for Notes */
+/* Notes List Styling */
+.daftar-notes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 24px;
+    padding: 0;
+}
+
+.note-item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
