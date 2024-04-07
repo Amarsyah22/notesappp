@@ -1,4 +1,6 @@
-import '../data.js';
-import '../app-bar.js';
-import '../footer-bar.js';
-import '../note-item.js';
+import './style/style.css';
+
+import '../data/app-bar.js';
+import '../data/data.js';
+import '../data/footer-bar.js';
+import '../data/note-item.js';
