@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Notes App</title>
+    </head>
+    <body>
+        <header>
+            <app-bar></app-bar>
+        </header>
+        <main>
+            <div class="container">
+                <form id="note-form">
+                    <label for="note-title">Judul</label><br />
+                    <input type="text" id="note-title" name="noteTitles" required />
+                    <label for="note-body">Deskripsi</label><br />
+                    <textarea id="note-body" name="noteBodies" class="max-height-ver" required></textarea>
+                    <button type="submit">Add Note</button>
+                </form>
+                <section class="card">
+                    <div class="section-title">
+                        <h2>list your notes<i class="bi bi-card-list"></i></h2>
+                    </div>
+                    <div id="daftar-notes" class="daftar-notes">
+                        <note-item title="Judul Catatan 1" body="Isi Catatan 1"></note-item>
+                        <note-item title="Judul Catatan 2" body="Isi Catatan 2"></note-item>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <footer-bar></footer-bar>
+        </footer>
+    </body>
+</html>
